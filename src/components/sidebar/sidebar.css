@@ -42,8 +42,23 @@
     transform: scale(1.2);
     
 }
-
-
+.profilecontainer{
+    display:flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+.profile-img{
+    margin-left: 17%;
+    width:60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    border-radius:25px;;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -ms-border-radius:25px;
+    -o-border-radius:25px;
+}
 /*animations*/
 
 @keyframes fadein{
