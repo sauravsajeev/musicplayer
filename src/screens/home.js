@@ -1,4 +1,4 @@
-import React,{ useState ,useEffect} from 'react'
+import React,{ useState ,useEffect} from 'react';
 import Favourite from "./favourite";
 import  Feed  from "./feed";
 import  Library  from "./librarys";
@@ -12,7 +12,7 @@ import Login from './auth/login';
 import { setClientToken } from '../spotify';
 
 export default function Home() {
-  const [token,setToken] = useState("");
+  const [token,setToken] = useState(" ");
   useEffect(() =>{
     const token = window.localStorage.getItem("token");
     const hash= window.location.hash;
@@ -22,7 +22,8 @@ export default function Home() {
    window.localStorage.setItem("token", _token);
    setToken(_token);
   setClientToken(_token);
-    }else{
+    }
+    else{
       setToken(token);
       setClientToken(token);
     }
