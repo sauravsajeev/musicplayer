@@ -5,7 +5,7 @@ import { loginENDPOINT } from '../../spotify'
 
 export default function Login() {
   return (
-    <div class = "login-page">
+    <div className = "login-page">
         <a href ={loginENDPOINT}>login</a>
     </div>
 

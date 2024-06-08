@@ -11,3 +11,18 @@
     -o-border-radius:25px;
     display:flex;
 }
+/* LIBRARY */
+.library-body{
+    width:94%;
+    height:90%;
+    padding:3%;
+    display:flex;
+    flex-wrap:wrap;
+    overflow-y: auto;
+    justify-content: space-between;
+
+}
+.playcard{
+    width:15%;
+    height:35%;
+}
