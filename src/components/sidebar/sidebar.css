@@ -1,7 +1,7 @@
 .sidebar-container{
  width:100px;
  height:100%;
- background-color: #81ecec;
+ background-color: #fabc1fcd;
  border-radius:0px 30px 30px 0px;
  overflow: hidden;
  transition: fade-in 1s;

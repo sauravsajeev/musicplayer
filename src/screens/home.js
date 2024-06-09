@@ -1,14 +1,14 @@
 import React,{ useState ,useEffect} from 'react';
 import Favourite from "./favourite";
 import  Feed  from "./feed";
-import  Library  from "./librarys";
+import  Library  from "./library";
 import  Trending  from "./trending";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import "./style.css";
 import "../shared/global.css";
 import Sidebar from '../components/sidebar';
 import Login from './auth/login';
-import { setClientToken } from '../spotify';
+import { setClientToken} from '../spotify';
 
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
       setToken(token);
       setClientToken(token);
     }
+
   },[]);
   return !token ?(
     <Login/>
