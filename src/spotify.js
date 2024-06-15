@@ -18,5 +18,9 @@ apiClient.interceptors.request.use(async function(config){
 };
 export default apiClient;
  
-
+// window.onbeforeunload = function (event) {
+//     if (event && event.type === "beforeunload") {
+//         sessionStorage.removeItem("token");
+//     }
+// };
 
