@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 /*Home.js*/
 
 .main-body{
@@ -19,6 +20,8 @@
     font-size: 3rem;
     border-bottom: 1px solid;
     padding-bottom: 2px;
+    animation: fadedown .5s;
+    -webkit-animation: fadedown .5s;
 }
 .library-body{
     width:98%;
@@ -35,7 +38,7 @@
     margin-left: 5%;
     margin-bottom:3%;
     height:35%;
-    background-color:  #fabc1f93;
+    background-color:  #fdfcf8e1;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -43,6 +46,8 @@
     -o-border-radius: 25px;
     font-size: 20px;
     display: flex;
+    animation: fadeup .5s ;
+    -webkit-animation: fadeup .5s ;
     flex-direction: column;
     transition: all .5s;
     -webkit-transition: all .5s;
@@ -81,7 +86,7 @@
     width:auto;
     height:auto;
     margin-top: 5%;
-    background-color: rgba(142, 141, 141, 0.358);
+    background-color: #1db954a7;
     border-radius: 10px;
     text-align: center;
     -webkit-border-radius: 10px;
@@ -106,4 +111,164 @@
 .playNum{
     font-size: 1rem;
     color:rgba(47, 47, 47, 0.934);
+}
+
+/* WELCOME SCREEN */
+
+.HomeContainer{
+    width:100%;
+    height:100%;
+    transition: all .4s;
+    animation:fadeins .5s;
+    -webkit-animation:fadeins .5s;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+.HeadNAME{
+   position: fixed;
+   left:33%;
+   top:30%;
+   display: flex;
+   max-height:20vh;
+   width:35%;
+}
+.welcomeLogo{
+    font-family: 'Poppins';
+    font-size: 40px;
+    width:60%;
+    margin-top: 6px;
+    vertical-align: center;
+}
+.spotifylogo{
+    max-height:10vh;
+    width:40%;
+    margin-left: 0px;
+    overflow: hidden;
+    object-fit: contain;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+.spotifylogo:hover{
+    transform:scale(1.2);
+    filter:drop-shadow(10px,10px,10px,black);
+    -webkit-filter:drop-shadow(10px,10px,10px,black);
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+    -o-transform:scale(1.2);
+}
+.desc{
+   position:absolute;
+   left:15%;
+   top:43%;
+   width:70%;
+   height:40vh;
+   text-align: center;
+   font-size: 20px;
+   animation: fadeup .5s   ;
+   -webkit-animation:;
+   animation-delay: 1s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+   
+}
+
+
+.btn-grad {
+    position: absolute;
+    left:41%;
+    top: 60%;
+    background-image: linear-gradient(to right, #d1d1d1 0%, #ffffff  51%, #12eb0e  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color:#1dfb05;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width:10vw;
+    text-decoration: none;
+  }
+
+  .btn-grad:hover {
+    background-position: right center;
+    /*changethedirectionofthechangehere*/color: #fff;
+    text-decoration: none;
+    transform:scale(1.1) ;
+    -webkit-transform:scale(1.1) ;
+    -moz-transform:scale(1.1) ;
+    -ms-transform:scale(1.1) ;
+    -o-transform:scale(1.1) ;
+}
+
+/* ANIMATIONS */
+@keyframes fadeup{
+    0%{
+        opacity:0;
+        transform:translateY(+70px) scale(1) ;
+        -webkit-transform:translateY(+70px) scale(1) ;
+        -moz-transform:translateY(+70px) scale(1) ;
+        -ms-transform:translateY(+70px) scale(1) ;
+        -o-transform:translateY(+70px) scale(1) ;
+}
+    100%{
+        opacity:1;
+        transform:translateY(0px) scale(1) ;
+        -webkit-transform:translateY(0px) scale(1) ;
+        -moz-transform:translateY(0px) scale(1) ;
+        -ms-transform:translateY(0px) scale(1) ;
+        -o-transform:translateY(0px) scale(1) ;
+}
+}
+@keyframes fadedown{
+    0%{
+        opacity:0;
+        transform:translateY(-70px) scale(1) ;
+        -webkit-transform:translateY(-70px) scale(1) ;
+        -moz-transform:translateY(-70px) scale(1) ;
+        -ms-transform:translateY(-70px) scale(1) ;
+        -o-transform:translateY(-70px) scale(1) ;
+}
+    100%{
+        opacity:1;
+        transform:translateY(0px) scale(1) ;
+        -webkit-transform:translateY(0px) scale(1) ;
+        -moz-transform:translateY(0px) scale(1) ;
+        -ms-transform:translateY(0px) scale(1) ;
+        -o-transform:translateY(0px) scale(1) ;
+}
+}
+@keyframes fadeins{
+    0%{
+        opacity:0;
+        transform:scale(1.2) ;
+        -webkit-transform:scale(1.2) ;
+        -moz-transform:scale(1.2) ;
+        -ms-transform:scale(1.2) ;
+        -o-transform:scale(1.2) ;
+}
+    100%{
+        opacity:1;
+        transform:scale(1) ;
+        -webkit-transform:scale(1) ;
+        -moz-transform:scale(1) ;
+        -ms-transform:scale(1) ;
+        -o-transform:scale(1) ;
+}
 }

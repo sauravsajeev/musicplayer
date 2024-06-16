@@ -1,16 +1,23 @@
 .sidebar-container{
  width:100px;
  height:100%;
- background-color: #fabc1fcd;
+ background-color: #dcdcdcbd;
  border-radius:0px 30px 30px 0px;
  overflow: hidden;
- transition: fade-in 1s;
+ transition: all 1s;
  animation: fadein 1000ms ;
  -webkit-animation: fadein 1000ms ;
- -webkit-transition: fade-in 1s;
- -moz-transition: fade-in 1s;
- -ms-transition: fade-in 1s;
- -o-transition: fade-in 1s;
+ -webkit-transition: all 1s;
+ -moz-transition: all 1s;
+ -ms-transition: all 1s;
+ -o-transition: all 1s;
+ -webkit-border-radius:0px 30px 30px 0px;
+ -moz-border-radius:0px 30px 30px 0px;
+ -ms-border-radius:0px 30px 30px 0px;
+ -o-border-radius:0px 30px 30px 0px;
+}
+.sidebar-container:hover{
+    background-color: #ffffff;
 }
 .icon-container{
     height:100%;
@@ -40,6 +47,7 @@
     padding:30px;
     opacity:1;
     transform: scale(1.2);
+    color:white;
     
 }
 .profilecontainer{

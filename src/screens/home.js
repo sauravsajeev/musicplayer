@@ -9,6 +9,7 @@ import "../shared/global.css";
 import Sidebar from '../components/sidebar';
 import Login from './auth/login';
 import { setClientToken} from '../spotify';
+import WelcomeScreen from './default';
 
 
 export default function Home() {
@@ -32,13 +33,14 @@ export default function Home() {
 
   return !token ?(
     <Login/>
+    
   ):(
     <Router>
         <div className = "main-body">
         <Sidebar />
         <div className = "screen-container">
         <Routes>
-            <Route path="/" element={<Library />} />
+            <Route path="/" element={<WelcomeScreen />} />
             <Route path="/favourite" element={<Favourite />} />
             <Route path="/feed" element={<Feed />} />
             <Route path="/library" element={<Library />} />

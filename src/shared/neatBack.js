@@ -9,40 +9,40 @@ const BackgroundGradient = () => {
     if (!canvasRef.current) return;
 
     const config = {
-       "colors": [
+     "colors": [
         {
-            "color": "#DE9F05",
+            "color": "#1DB954",
             "enabled": true
         },
         {
-            "color": "#FFB82C",
+            "color": "#229031",
             "enabled": true
         },
         {
-            "color": "#FFA117",
+            "color": "#108305",
             "enabled": true
         },
         {
-            "color": "#F1F1F1",
-            "enabled": true
+            "color": "#6D3BFF",
+            "enabled": false
         },
         {
             "color": "#f5e1e5",
             "enabled": false
         }
     ],
-    "speed": 2,
-    "horizontalPressure": 1,
+    "speed": 4,
+    "horizontalPressure": 4,
     "verticalPressure": 5,
-    "waveFrequencyX": 4,
+    "waveFrequencyX": 2,
     "waveFrequencyY": 3,
-    "waveAmplitude": 8,
-    "shadows": 5,
-    "highlights": 8,
+    "waveAmplitude": 5,
+    "shadows": 0,
+    "highlights": 2,
     "colorBrightness": 1,
-    "colorSaturation": 10,
+    "colorSaturation": 7,
     "wireframe": false,
-    "colorBlending": 7,
+    "colorBlending": 6,
     "backgroundColor": "#003FFF",
     "backgroundAlpha": 1,
     "resolution": 1
