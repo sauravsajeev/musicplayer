@@ -2,6 +2,8 @@ import React from 'react';
 import "./player.css";
 export default function Queue() {
   return (
-    <div>Queue</div>
+    <div className='queued-songs'>
+        <div className='headqueue'>Up Next</div>
+    </div>
   )
 }

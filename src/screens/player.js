@@ -16,7 +16,8 @@ export default function Player() {
   useEffect(() => {
 if(location.state){
    apiClient.get("playlists/"+ location.state?.id + "/tracks")
-   .then(res=> {console.log(res.data)
+   .then(res=> {
+    console.log(res.data)
    setTracks(res.data.items);
    setCurrentTracks(res.data.items[0].track);
   });
@@ -29,7 +30,7 @@ if(location.state){
       </div>
 
       <div className='right-player-body'>
-        <SongCard />
+        <SongCard tracks={currentTracks}/>
         <Queue />
       </div>
     </div>
