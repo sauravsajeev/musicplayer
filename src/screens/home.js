@@ -10,6 +10,7 @@ import Sidebar from '../components/sidebar';
 import Login from './auth/login';
 import { setClientToken} from '../spotify';
 import WelcomeScreen from './default';
+import Player from './player';
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
   setClientToken(_token);
     }
     else{
+      
       setToken(token);
       setClientToken(token);
     }
@@ -43,6 +45,7 @@ export default function Home() {
             <Route path="/" element={<WelcomeScreen />} />
             <Route path="/favourite" element={<Favourite />} />
             <Route path="/feed" element={<Feed />} />
+            <Route path="/player" element={<Player />} />
             <Route path="/library" element={<Library />} />
             <Route path="/trending" element={<Trending />} />
         </Routes>

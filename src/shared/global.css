@@ -8,6 +8,9 @@
     -ms-border-radius:0px 30px 30px 0px;
     -o-border-radius:0px 30px 30px 0px;
 }
+.flex{
+    display:flex;
+}
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 .signin{
     position: fixed;
