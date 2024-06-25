@@ -32,8 +32,6 @@ const navigate = useNavigate();
             <div className='playDES'>
               <div className='playTitle'>{playlist.name}</div>
               <div className='playNum'>Total Songs:{playlist.tracks.total}</div>
-              
-              
             </div>
             <div className='animeplay'>
                   <img src ="../../images/spotify.gif"

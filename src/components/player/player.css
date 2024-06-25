@@ -56,14 +56,13 @@
    width: auto;
    font-size: 1.2rem;
    font-weight: 500;
-   overflow: hidden; /* Ensures the content is not revealed until the animation */
-   border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
-   white-space: nowrap; /* Keeps the content on a single line */
-   margin:0 6%; /* Gives that scrolling effect as the typing happens */
-   letter-spacing: .15em; /* Adjust as needed */
-   animation: 
-     typing 3.5s steps(40, end) infinite,
-     blink-caret .75s step-end infinite;
+   overflow: hidden;
+   border-right: .15em solid rgb(255, 255, 255);
+   white-space: nowrap;
+   margin:0 6%;
+   letter-spacing: .15em;
+   animation:      typing 3.5s steps(40, end) infinite,     blink-caret .75s step-end infinite;
+   -webkit-animation:      typing 3.5s steps(40, end) infinite,     blink-caret .75s step-end infinite;
 }
 .nec-details{
    height:40%;
@@ -103,8 +102,39 @@
   font-weight: 500;
 }
 
+.songlist{
+   margin-bottom:10px;
+   overflow-y: scroll;
+}
+.songnames{
+   margin-bottom: 10px;
+   width:100%;
+   /* overflow-y: scroll; */
+   margin-left: 5%;
+   display: flex;
+   justify-content: space-between;
 
-
+}
+.songnames:hover{
+ font-weight: 500;
+}
+.eachsong{
+   padding:3%;
+   width:60%;
+}
+.sduration{
+   padding:3%;
+   width:20%;
+}
+.currents{
+   color:#1efb05a9;
+   font-weight: 500;
+}
+.playbar{
+   padding:3%;
+   height:22px;
+   mix-blend-mode: multiply;
+}
 /* ANIMATIONS */
  /* The typing effect */
  @keyframes typing {
