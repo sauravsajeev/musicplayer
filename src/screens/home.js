@@ -1,5 +1,4 @@
 import React,{ useState ,useEffect} from 'react';
-import Favourite from "./favourite";
 import  Feed  from "./feed";
 import  Library  from "./library";
 import  Trending  from "./trending";
@@ -45,9 +44,9 @@ export default function Home() {
         <Routes>
             <Route path="/" element={<WelcomeScreen />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/favourite" element={<Favourite />} />
             <Route path="/feed" element={<Feed />} />
             <Route path="/player" element={<Player />} />
+            <Route path="/favourite" element={<Player />} />
             <Route path="/library" element={<Library />} />
             <Route path="/trending" element={<Trending />} />
         </Routes>

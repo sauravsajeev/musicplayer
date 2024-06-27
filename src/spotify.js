@@ -4,7 +4,7 @@ import { redirect } from "react-router-dom";
 const authEndpoint ="https://accounts.spotify.com/authorize?";
 const clientID = "3d810f0e48184ce7a0d126c7bf79b36d";
 const redirectUrl = "http://localhost:3000";
-const  scopes = ["user-library-read","playlist-read-private"];
+const  scopes = ["user-library-read","playlist-read-private","user-top-read"];
 
 export const  loginENDPOINT = `${authEndpoint}client_id=${clientID}&redirect_uri=${redirectUrl}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 const apiClient = axios.create({

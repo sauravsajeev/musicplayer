@@ -14,18 +14,20 @@
 }
 /* LIBRARY */
 
-.lib-head{
-    margin-left: 5%;
-    width:28%;
+h1{
+    text-align: center;
+    width:auto;
     font-size: 3rem;
     border-bottom: 1px solid;
     padding-bottom: 2px;
     animation: fadedown .5s;
     -webkit-animation: fadedown .5s;
+    color: #fdfcf8e1;
+    ;
 }
 .library-body{
     width:90%;
-    height:90%;
+    height:80%;
     padding:3%;
     display:flex;
     flex-wrap:wrap;
@@ -249,13 +251,21 @@
     height:100%;
 }
 .right-player-body{
-    width:38%;
+    max-width:38%;
+    min-width: 38%;
     height:100%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
+/* FAVOURITE */
+/* .favouritesec{
+    height:100%;
+}
+.favsongs{
+   width: 90%;
+   height: 100%;
+} */
 /* ANIMATIONS */
 @keyframes fadeup{
     0%{

@@ -19,7 +19,7 @@ const navigate = useNavigate();
  }
   return (<div className = "screen-container">
    
-    <div className = "lib-head">Playlist Collection</div>
+    <h1 className = "lib-head">Playlist Collection</h1>
 
     <div className ="library-body">
     {playlists?.map((playlist) => (
